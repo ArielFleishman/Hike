@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        //https://stackoverflow.com/questions/73659081/class-referenced-in-the-manifest-com-theartofdev-edmodo-cropper-cropimageactiv
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Hike"
+include ':app'
